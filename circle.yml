@@ -1,3 +1,6 @@
+test:
+  post:
+    - bundle exec middleman build
 deployment:
   production:
     branch: master
