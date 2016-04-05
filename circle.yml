@@ -3,3 +3,5 @@ deployment:
     branch: master
     commands:
       - ./deploy.sh
+    heroku:
+      appname: jar-jar-gone
