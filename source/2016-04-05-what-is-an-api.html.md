@@ -2,8 +2,6 @@
 title: What is an API?
 ---
 
-# What is an API?
-
 An api is a thing.
 
 READMORE
