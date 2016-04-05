@@ -1,6 +1,7 @@
 deployment:
   pre:
-    - middleman build
+    commands:
+      - middleman build
   production:
     branch: master
     heroku:
