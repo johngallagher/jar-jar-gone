@@ -1,7 +1,7 @@
+dependencies:
+  post:
+    - middleman build
 deployment:
-  pre:
-    commands:
-      - middleman build
   production:
     branch: master
     heroku:
