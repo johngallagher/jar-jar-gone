@@ -1,7 +1,7 @@
 deployment:
+  pre:
+    - middleman build
   production:
     branch: master
-    commands:
-      - ./deploy.sh
     heroku:
       appname: jar-jar-gone
