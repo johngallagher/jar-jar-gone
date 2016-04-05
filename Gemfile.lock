@@ -33,6 +33,7 @@ GEM
     fastimage (1.8.1)
       addressable (~> 2.3, >= 2.3.5)
     ffi (1.9.10)
+    git-version-bump (0.15.1)
     haml (4.0.7)
       tilt
     hamster (2.0.0)
@@ -96,6 +97,9 @@ GEM
     padrino-support (0.13.1)
       activesupport (>= 3.1)
     rack (1.6.4)
+    rack-contrib (1.4.0)
+      git-version-bump (~> 0.15)
+      rack (~> 1.4)
     rack-livereload (0.3.16)
       rack
     rack-test (0.6.3)
@@ -124,6 +128,7 @@ DEPENDENCIES
   middleman (~> 4.0.0)
   middleman-blog (>= 4.0.0)
   middleman-livereload (~> 3.4.3)
+  rack-contrib
   redcarpet (~> 3.3, >= 3.3.3)
 
 BUNDLED WITH
