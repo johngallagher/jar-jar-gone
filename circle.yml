@@ -1,6 +1,6 @@
 dependencies:
   post:
-    - middleman build
+    - bundle exec middleman build
 deployment:
   production:
     branch: master
