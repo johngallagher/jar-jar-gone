@@ -29,9 +29,6 @@ activate :blog do |blog|
   # blog.day_link = "{year}/{month}/{day}.html"
    blog.default_extension = ".md"
 
-  blog.tag_template = "tag.html"
-  #blog.calendar_template = "calendar.html"
-
   # Enable pagination
   # blog.paginate = true
   # blog.per_page = 10
@@ -40,9 +37,9 @@ end
 
 page "/feed.xml", layout: false
 # Reload the browser automatically whenever files change
-# configure :development do
-#   activate :livereload
-# end
+configure :development do
+  activate :livereload
+end
 
 # Methods defined in the helpers block are available in templates
 # helpers do
