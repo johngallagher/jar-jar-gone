@@ -1,13 +1,10 @@
 require 'rack'
 require 'rack/contrib/try_static'
+require 'rack/contrib/not_found'
 
-# Serve files from the build directory
 use Rack::TryStatic,
   root: 'build',
   urls: %w[/],
   try: ['.html', 'index.html', '/index.html']
 
-run lambda do |env|
-  four_oh_four_page = File.expand_path("build/404/index.html", __FILE__)
-  [ 404, { 'Content-Type'  => 'text/html'}, [ File.read(four_oh_four_page) ]]
-end
+run Rack::NotFound.new('./build/404.html')
