@@ -1,10 +1,10 @@
 source 'https://rubygems.org'
 
 ruby '2.2.3'
-gem "middleman", "~> 4.0.0"
-gem "middleman-blog", '>= 4.0.0'
+gem "middleman", "~> 3.4.1"
+gem "middleman-blog", '>= 3.5.3'
 gem "middleman-livereload", "~> 3.4.3"
-gem 'middleman-imageoptim'
+gem 'middleman-imageoptim', github: 'plasticine/middleman-imageoptim'
 
 gem 'image_optim'
 
