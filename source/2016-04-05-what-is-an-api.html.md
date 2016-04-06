@@ -32,7 +32,7 @@ When you press that "Sign in using Facebook" button:
 
 Spotify creates an account for you with those details and you're done.
 
-## 2. Share data between two websites
+### 2. Share data between two websites
 
 You want to see what playlists your Facebook friend George Clooney has.
 
@@ -47,14 +47,14 @@ You click on the "Playlists of my friends" in Spotify:
 
 It's a conversation between two computers. One computer makes a request to the API, the other responds.
 
-### A human example - asking for lunch
+### Human example - asking for lunch
 
 * Request: "Hey, can you get me a chicken salad sandwich please?"
 * Response: "Sure, here you go. It was £3.21."
 * Request: "Oh man - you got me the cheapo own brand sandwich? Rubbish! Can you take it back and get me another?"
 * Response: "No. Get lost. Honestly. You're so demanding."
 
-### A computer example - getting all the track from David Bowie's Blackstar album
+### Computer example - getting all the track from David Bowie's Blackstar album
 
 * Request: "Hey, Spotify API, can you get me all the tracks for the Blackstar album please?"
 * Response: "Sure, here you go. They are: Blackstar, Lazarus etc"
@@ -62,7 +62,7 @@ It's a conversation between two computers. One computer makes a request to the A
 * Response: "Certainly. Here you go. It's written by David Bowie and it's got album art."
 
 
-Want more detail on how exactly this works? Try my tutorial to get the tracks from Blackstar for real!
+Want more detail on how exactly this works? Try my tutorial to [get the tracks from Blackstar for real!](using-the-spotify-api-to-get-an-albums-tracks.html)
 
 
 ## Why are APIs so groovy?

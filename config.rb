@@ -42,11 +42,11 @@ configure :development do
 end
 
 # Methods defined in the helpers block are available in templates
-# helpers do
-#   def some_helper
-#     "Helping"
-#   end
-# end
+helpers do
+  def image_tag path, params = {}
+    super path, params.merge(class: "pure-img #{params.fetch(:class, "")}")
+  end
+end
 
 # Build-specific configuration
 configure :build do

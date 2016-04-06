@@ -7,13 +7,31 @@
 
     <title>Jar Jar Gone - <%= current_page.data.title %></title>
     <%= feed_tag :atom, "#{blog.options.prefix.to_s}/feed.xml", title: "Atom Feed" %>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pure/0.6.0/pure-min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        .l-box {
+            padding: 1em;
+        }
+
+        .content {
+          margin-left: auto;
+          margin-right: auto;
+          padding-left: 2em;
+          padding-right: 2em;
+          max-width: 560px;
+        }
+    </style>
   </head>
   <body>
-
-    <div id="main" role="main">
-      <h1><%= current_page.data.title %></h1>
-      <%= yield %>
+    <div id="layout" class="pure-g" role="main">
+      <div class="pure-u-1">
+        <div class="l-box content">
+          <h1><%= current_page.data.title %></h1>
+          <%= yield %>
+        </div>
+      </div>
     </div>
-
   </body>
 </html>
