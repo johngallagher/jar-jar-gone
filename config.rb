@@ -57,5 +57,9 @@ configure :build do
   # activate :minify_javascript
 end
 
-activate :imageoptim
+activate :imageoptim do |options|
+  options.pngout = false
+  options.svgo = false
+end
+
 activate :gzip
