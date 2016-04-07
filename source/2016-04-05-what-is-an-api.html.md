@@ -60,8 +60,47 @@ It's a conversation between two computers. One computer makes a request to the A
 * Request: "Cool. Can I see more details for that third track please?"
 * Response: "Certainly. Here you go. It's written by David Bowie and it's got album art."
 
+Want a practical? Try my tutorial to [get the tracks of an album using the Spotify API!](using-the-spotify-api-to-get-an-albums-tracks.html)
 
-Want more detail on how exactly this works? Try my tutorial to [get the tracks of an album using the Spotify API](using-the-spotify-api-to-get-an-albums-tracks.html)
+
+## Related Jargon
+
+### Endpoint
+
+The URL for a feature that an API offers.
+
+For example, [here are the endpoints](https://developer.spotify.com/web-api/endpoint-reference/) of the Spotify API:
+
+![Endpoints of Spotify API](images/apis/spotify-endpoints.png)
+
+> Where's the start of the URL?
+
+At the [top of the page]() it says "Web API Base URL: https://api.spotify.com"
+
+In API documentation, we exclude the start bit so we don't have to keep repeating it.
+
+If the endpoint is `/v1/albums` the full endpoint URL will be `https://api.spotify.com/v1/albums`
+
+> What do the things in curly braces mean?
+
+It means "put a unique identifier here".
+
+The first endpoint is `/v1/albums/{id}` so we should replace the `{id}` for the album ID we want.
+
+
+### JSON
+
+### XML
+
+###
+
+
+
+
+
+
+
+
 
 
 ## Why are APIs so groovy?
@@ -103,9 +142,4 @@ Or maybe:
 Mindblowing huh?
 
 Bottom line - if you learn how to write code that uses APIs, you can do magic.
-
-
-
-
-
 
