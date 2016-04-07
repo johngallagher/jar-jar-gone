@@ -10,7 +10,7 @@
 
     <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.6.0/pure-min.css">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <%= google_analytics_universal_tag %>
+    <%= google_analytics_universal_tag unless environment == :development %>
     <style>
         .l-box {
             padding: 1em;
