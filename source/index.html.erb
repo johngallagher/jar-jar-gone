@@ -2,8 +2,10 @@
 pageable: false
 ---
 
-<% page_articles.each do |article| %>
-  <h2><%= link_to article.title, article %></h2>
-  <%= article.summary %>
-  <%= link_to "Read more...", article %>
+<% jargon_articles.each do |article| %>
+    <article>
+      <h2><%= link_to article.title, article %></h2>
+      <%= article.summary %>
+      <%= link_to "Read more...", article %>
+    </article>
 <% end %>

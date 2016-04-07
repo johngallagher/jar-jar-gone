@@ -30,6 +30,10 @@ configure :development do
 end
 
 helpers do
+  def jargon_articles
+    page_articles.select { |article| article.tags.include? "jargon" }.sort_by { |article| article.data.term }
+  end
+
   def image_tag path, params = {}
     super path, params.merge(class: "pure-img #{params.fetch(:class, "")}")
   end

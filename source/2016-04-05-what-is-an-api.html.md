@@ -1,6 +1,7 @@
 ---
 title: What is an API?
 tags: jargon
+term: API
 ---
 
 An API allows two computer programs to communicate over the internet.

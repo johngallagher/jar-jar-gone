@@ -2,6 +2,7 @@
 title: What is a browser?
 date: 2016-04-07 05:22 UTC
 tags: jargon
+term: Browser
 ---
 
 An app that allows you to browse around the Internet using links. 
