@@ -50,5 +50,3 @@ activate :gzip
 activate :google_analytics do |ga|
   ga.tracking_id = 'UA-76111812-1'
 end
-
-activate :directory_indexes
