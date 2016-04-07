@@ -77,18 +77,50 @@ Of these, REST using the JSON format is the most popular.
 
 Because JSON wasn't around when SOAP was invented.
 
-
-
 ## What is REST?
 
 ## What is SOAP?
 
-## What is XML?
+## What is XML? What is JSON?
 
-## What is JSON?
+A way of formatting data. The Internet works by sending text files around. But this text could be anything. 
+
+It's a bit like the difference between a broadsheet and a tabloid newspaper - the information is presented differently but the facts are the same. 
+
+### Examples 
+
+If we were describing a person we usually want to tell the website about the different aspects of a person. 
+
+What does a person have? Their age, their name, their hair colour maybe?
+
+Let's represent George Clooney like this. Mmmmmm. George Clooney.
+
+From Wikipedia:
+
+Name: George Clooney
+Age: 56
+Appearance: Gorgeous
 
 
+**In JSON**
 
+**In XML**
+
+**Question** Why is there not just one format?
+
+Microsoft thought XML was really cool when it came out. .NET is made by Microsoft so you'll find it uses XML loads. 
+
+ Newer programming languages like Ruby wanted more readable alternatives than XML. JSON has less crap around the data, so started to take off.
+
+Added to that, the trendy language Javascript can read JSON easier than falling off a log.
+
+### Why does the format matter?
+
+When you get data back from an API you need to make sense of it. Without knowing the format you can't really read it properly. 
+
+It's like "unscrambling" a coded message. If you know the response from an API is in JSON you can code your website to unscramble the JSON and understand the data it's returned. 
+
+Luckily, all programming languages have XML and JSON unscrambling features built in.
 
 
 ## What are requests and responses?
