@@ -6,6 +6,6 @@ use Rack::Deflater
 use Rack::TryStatic,
   root: 'build',
   urls: %w[/],
-  try: ['.html', 'index.html', '/index.html']
+  try: ['.html', 'index', 'index.html', '/index.html']
 
 run Rack::NotFound.new('./build/404')
