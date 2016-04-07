@@ -8,7 +8,11 @@ An app that allows you to browse around the Internet using links.
 
 Software companies like Mozilla, Google, Microsoft and Apple make this software for free. 
 
-Google make a browser called "Chrome". Microsoft make a browser called "Internet Explorer" Mozilla make "Firefox" and Apple make a browser called "Safari". 
+|Company|Browser|
+|Apple|Safari|
+|Google|Chrome|
+|Microsoft|Internet Explorer|
+|Mozilla|Firefox|
 
 The Internet is evolving all the time and browsers are updated to take advantage of the new features. 
 
