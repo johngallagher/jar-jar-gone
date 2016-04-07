@@ -2,7 +2,6 @@
 pageable: false
 ---
 
-<h1><%= link_to "Jar Jar Gone", "/" %></h1>
 <% page_articles.each do |article| %>
   <h2><%= link_to article.title, article %></h2>
   <%= article.summary %>

@@ -1,10 +1,9 @@
 ---
 title: What is an API?
+tags: jargon
 ---
 
-An API is a way of two computer programs talking to each other easily.
-
-Don't want your customers to remember a thousand different passwords? You need an API.
+An API allows two computer programs to communicate over the internet.
 
 Fed up of copy and pasting between different systems? APIs can help.
 
@@ -62,7 +61,7 @@ It's a conversation between two computers. One computer makes a request to the A
 * Response: "Certainly. Here you go. It's written by David Bowie and it's got album art."
 
 
-Want more detail on how exactly this works? Try my tutorial to [get the tracks from Blackstar for real!](using-the-spotify-api-to-get-an-albums-tracks.html)
+Want more detail on how exactly this works? Try my tutorial to [get the tracks of an album using the Spotify API](using-the-spotify-api-to-get-an-albums-tracks.html)
 
 
 ## Why are APIs so groovy?

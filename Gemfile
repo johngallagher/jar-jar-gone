@@ -5,7 +5,7 @@ gem "middleman", "~> 3.4.1"
 gem "middleman-blog", '>= 3.5.3'
 gem "middleman-livereload", "~> 3.4.3"
 gem 'middleman-imageoptim', github: 'plasticine/middleman-imageoptim'
-
+gem 'middleman-google-analytics', '~> 2.1'
 gem 'image_optim'
 
 gem 'redcarpet', '~> 3.3', '>= 3.3.3'

@@ -1,5 +1,6 @@
 ---
-title: Tutorial - How to use the Spotify API to get the tracks of an album
+title: How to use the Spotify API to get the tracks of an album
+tags: tutorial
 ---
 
 David Bowie's final album before his death was Blackstar. 
