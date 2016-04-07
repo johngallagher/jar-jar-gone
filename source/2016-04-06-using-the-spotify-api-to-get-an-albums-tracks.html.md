@@ -3,11 +3,12 @@ title: How to use the Spotify API to get the tracks of an album
 tags: tutorial
 ---
 
-David Bowie's final album before his death was Blackstar. 
+[What is an API?](what-is-an-api.html) gave the theory of an API.
 
-We'll get all the track names for this album using the Spotify API.
+Now it's time to get your hands dirty.
 
-A good partner practical to [What is an API?](what-is-an-api.html).
+We'll get all the track names David Bowie's Blackstar album using the Spotify API.
+
 
 
 READMORE
