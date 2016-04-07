@@ -6,7 +6,7 @@ tags: jargon
 
 An app that allows you to browse around the Internet using links. 
 
-Software companies like Mozilla, Google, Microsoft and Apple make this software for free. 
+Mozilla, Google, Microsoft and Apple make this software for free. 
 
 |Company|Browser|
 |:------|:------|
