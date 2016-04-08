@@ -63,7 +63,7 @@ It's a conversation between two computers. One computer makes a request to the A
 
 **Aside** Want a practical? Try my tutorial to [get the tracks of an album using the Spotify API!](/using-the-spotify-api-to-get-an-albums-tracks)
 
-## How does an API send it's data?
+## How does an API send and receive information?
 
 Three different kinds of API:
 
@@ -83,60 +83,79 @@ Because JSON wasn't around when SOAP was invented.
 
 ## What is XML? What is JSON?
 
-A way of formatting data. The Internet works by sending text files around. But this text could be anything. 
+A way of formatting data. The Internet works by sending text files around.
 
-It's a bit like the difference between a broadsheet and a tabloid newspaper - the information is presented differently but the facts are the same. 
+But what goes in these text files? And how do we convert information about an event, person, place or anything else into something a computer can understand?
 
-### Examples 
+There are two common ways of doing this for APIs: JSON and XML.
 
-If we were describing a person we usually want to tell the website about the different aspects of a person. 
+### How do XML and JSON look?
 
-What does a person have? Their age, their name, their hair colour maybe?
+Let's imagine we've got an API that returns the most attractive man in the world.
 
-Let's represent George Clooney like this. Mmmmmm. George Clooney.
+Who's that? George Clooney, obviously!
 
-From Wikipedia:
+**George Clooney on Wikipedia**
 
-Name: George Clooney
-Age: 56
-Appearance: Gorgeous
+Here's the man himself on Wikipedia:
 
+![George Clooney](/images/apis/george-clooney.png)
 
-**In JSON**
+What would the response from the API look like?
 
-**In XML**
+**George Clooney in JSON**
+
+```json
+{
+  "name": "George Timothy Clooney",
+  "birthday": "May 6, 1961",
+  "age": 54,
+  "birthPlace": "Lexington, Kentucky, U.S."
+}
+```
+
+**George Clooney in XML**
+
+```xml
+<celebrity>
+  <name>George Timothy Clooney</name>
+  <birthday>May 6, 1961</birthday>
+  <age>54</age>
+  <birthPlace>Lexington, Kentucky, U.S.</birthPlace>
+</celebrity>
+```
+
+JSON versus XML is a bit like a film on the TV versus in a cinema. It's exactly the same film, but it looks different.
 
 **Question** Why is there not just one format?
 
-Microsoft thought XML was really cool when it came out. .NET is made by Microsoft so you'll find it uses XML loads. 
+Everyone thought XML was really cool when it came out. A computer readable way of describing stuff? Awesome!
 
- Newer programming languages like Ruby wanted more readable alternatives than XML. JSON has less crap around the data, so started to take off.
+But then things moved on. Newer programming languages like Ruby wanted more readable alternatives than XML.
 
-Added to that, the trendy language Javascript can read JSON easier than falling off a log.
+JSON has less crap around the data, so that started to take off.
+
+JSON is also designed to be read by JavaScript, and JavaScript has become incredibly popular.
 
 ### Why does the format matter?
 
-When you get data back from an API you need to make sense of it. Without knowing the format you can't really read it properly. 
+When you get data back from an API you need to make sense of it. Without knowing the format you can't get at the data.
 
-It's like "unscrambling" a coded message. If you know the response from an API is in JSON you can code your website to unscramble the JSON and understand the data it's returned. 
+It's like "unscrambling" a coded message. Luckily, all programming languages have XML and JSON unscrambling features built in.
 
-Luckily, all programming languages have XML and JSON unscrambling features built in.
-
+The request and response is often encoded using JSON or XML.
 
 ## What are requests and responses?
 
-Like browsers, APIs use **requests and responses**.
+The whole internet works off requests and responses and APIs are no different.
 
-They're packets of information flying around. 
+What are they? They're packets of information flying around. 
 
 You can imagine them as letters between friends.
 
 Making a request to an API is a bit like writing a letter to your pen pal.
 
 Getting the response back is a bit like getting a reply letter back through your letterbox. Aw!
-
-* One app makes a request 
-* Another app replies with a response 
 
 **Aside** They're sometimes called HTTP requests or responses. HTTP is the base layer that everything else works on top of. [Read more about HTTP](/what-is-http)
 
