@@ -7,22 +7,21 @@ term: request
 
 They're packets of information flying around.  You can imagine them as letters between friends.
 
-Making a request is like writing a letter to your pen pal.
+**Request** - writing a letter to your pen pal.
 
-![Letter to pen pal](/images/apis/letter-from-pen-pal-small.jpg)
+**Response** - getting a reply back through your letterbox.
 
 READMORE
 
+The whole internet works off requests and responses. Web sites, images, APIs, fonts, everything.
 
-Getting the response back is like getting a reply back through your letterbox. Aw!
+They're sometimes called HTTP requests or responses. 
 
-The whole internet works off requests and responses and APIs are no different.
+HTTP is the base layer that everything else works on top of. [Read more about HTTP](/what-is-http)
 
-**Aside** They're sometimes called HTTP requests or responses. HTTP is the base layer that everything else works on top of. [Read more about HTTP](/what-is-http)
+## What's in a request?
 
-## Anatomy of a request
-
-Three different bits of a request:
+Three different things:
 
 1. URL
 2. Method
@@ -83,8 +82,6 @@ APIs have access to some pretty sensitive stuff. So they often need you to do a 
 
 If you need to give your username and password to an API, you use the headers to pass this in.
 
-
-
 ## What's in a response?
 
 Three bits:
@@ -93,7 +90,7 @@ Three bits:
 2. Body
 3. Headers
 
-## 1. Status
+### 1. Status
 
 Was this request successful? 
 
@@ -109,8 +106,7 @@ There are loads of status codes. Here are a few common ones:
 |500|The app crashed. Oh dear. A geek is about to get fired.|
 {: class="pure-table"}
 
-
-## 2. Body
+### 2. Body
 
 The juicy bit - what's in the letter your friend wrote back to you?
 
@@ -118,7 +114,7 @@ For successful GET requests, this is the data from the API. Again, it'll be in J
 
 For successful POST requests that create stuff, it might be empty. For failing create requests, it'll contain an error message.
 
-## 3. Headers
+### 3. Headers
 
 The extra bits again. All sorts of crap like when the page was modified, what software's on the server and what your granny had for dinner tonight.
 
