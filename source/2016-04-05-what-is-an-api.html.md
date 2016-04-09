@@ -93,9 +93,7 @@ REST tells you what should be in your request and response for each resource in 
 
 Like REST, it's a structured set of rules for how an API works.
 
-It's pretty much dead nowadays - noone except the criminallh insane would choose this for a new API.
-
-
+It's pretty much dead nowadays - noone except the criminally insane would choose this for a new API.
 
 ## What is XML? What is JSON?
 
