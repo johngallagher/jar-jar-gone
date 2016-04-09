@@ -76,275 +76,51 @@ Three different kinds of API:
 
 Of these, REST using the JSON format is the most popular.
 
-**Question** Why does SOAP not have a JSON format?
-
-Because JSON wasn't around when SOAP was invented.
 
 ## What is REST?
 
-It's a blueprint for building a web app or an API.
+A structured set of rules for how a web app or API allows the user to do stuff. Two main concepts - resources and actions.
 
-It's a set of rules that determine how a web app or API gives back it's data.
+**Resources** are nouns - photos, friends, invoices.
 
-Most web apps and APIs nowadays are what we call "RESTful" - they play by the rules set down by REST.
+**Actions** are verbs - create, list, show, update, delete.
 
-### Why bother with rules?
+REST tells you what should be in your request and response for each resource in your app.
 
-Imagine trying to have a conversation with someone who's rude and socially awkward. Imagine playing a game of football with no rules. 
-
-It'd be pretty chaotic, frustrating and unproductive.
-
-
-### How does REST work?
-
-REST works off **resources** and **actions**.
-
-In everyday English, a resource is a noun, and an action is the verb.
-
-"I smashed the chair" - the resource is the chair, the action is smash.
-
-**Example - Facebook**
-
-Facebook is a RESTful app.
-
-
-What resources does Facebook have? 
-
-1. Friends
-2. Photos
-3. Albums
-4. Comments
-5. Status updates
-6. Events
-
-What actions does Facebook have?
-
-In a RESTful app, there are always seven actions to choose from:
-
-1. List
-2. Show
-3. New
-4. Create
-5. Edit
-6. Update
-7. Destroy
-
-Everything you do in a RESTful app is a combination of a resource and an action.
-
-Let's walk through using Facebook. Along the way we'll identify the resources and action.
-
-### 1. Login
-
-What do you see when you login to Facebook?  Your friends' status updates.
-
-* **Resource** Status update
-* **Action** List
-
-### 2. Post a new status update
-
-Imagine you've just eaten a delicious bowl of ice cream. Yasss!
-
-It's **vital** that your friends are aware just how good that tasted.
-
-Click in the "What's on your mind?" box.
-Type "I just had a bowl of mint choc chip and it was fucking UNREAL! #myfascinatinglife #refinedsugarisdabomb"
-Click "Post".
-
-* **Resource** Status update
-* **Action** Create
-
-### 3. Go into someone's status update
-
-updatege
-
-
-
-
+[Read more in what is REST?](/what-is-rest)
 
 ## What is SOAP?
 
+Like REST, it's a structured set of rules for how an API works.
+
+It's pretty much dead nowadays - noone except the criminallh insane would choose this for a new API.
+
+
+
 ## What is XML? What is JSON?
 
-A way of formatting data. The Internet works by sending text files around.
+A way of formatting data. The Internet works by sending text files around. But what goes in these text files?
 
-But what goes in these text files? And how do we convert information about an event, person, place or anything else into something a computer can understand?
+And how do we convert information about an event, person, place or anything else into something a computer can understand?
 
 There are two common ways of doing this for APIs: JSON and XML.
 
-### How do XML and JSON look?
+XML looks like this:
 
-Let's imagine we've got an API that returns the most attractive man in the world.
+JSON looks like this:
 
-Who's that? George Clooney, obviously!
+[Read more about XML and JSON](/what-is-xml-or-json)
 
-**George Clooney on Wikipedia**
-
-Here's the man himself on Wikipedia:
-
-![George Clooney](/images/apis/george-clooney.png)
-
-What would the response from the API look like?
-
-**George Clooney in JSON**
-
-~~~ json
-{
-  "name": "George Timothy Clooney",
-  "birthday": "May 6, 1961",
-  "age": 54,
-  "birthPlace": "Lexington, Kentucky, U.S."
-}
-~~~
-
-**George Clooney in XML**
-
-~~~ xml
-<celebrity>
-  <name>George Timothy Clooney</name>
-  <birthday>May 6, 1961</birthday>
-  <age>54</age>
-  <birthPlace>Lexington, Kentucky, U.S.</birthPlace>
-</celebrity>
-~~~
-
-JSON versus XML is a bit like a film on the TV versus in a cinema. It's exactly the same film, but it looks different.
-
-**Question** Why is there not just one format?
-
-Everyone thought XML was really cool when it came out. A computer readable way of describing stuff? Awesome!
-
-But then things moved on. Newer programming languages like Ruby wanted more readable alternatives than XML.
-
-JSON has less crap around the data, so that started to take off.
-
-JSON is also designed to be read by JavaScript, and JavaScript has become incredibly popular.
-
-### Why does the format matter?
-
-When you get data back from an API you need to make sense of it. Without knowing the format you can't get at the data.
-
-It's like "unscrambling" a coded message. Luckily, all programming languages have XML and JSON unscrambling features built in.
-
-The request and response is often encoded using JSON or XML.
 
 ## What are requests and responses?
 
+A request is part of request response.
+
 They're packets of information flying around.  You can imagine them as letters between friends.
 
-Making a request to an API is like writing a letter to your pen pal.
+Making a request is like writing a letter to your pen pal.
 
-![Letter to pen pal](/images/apis/letter-from-pen-pal-small.jpg)
-
-Getting the response back is like getting a reply back through your letterbox. Aw!
-
-The whole internet works off requests and responses and APIs are no different.
-
-**Aside** They're sometimes called HTTP requests or responses. HTTP is the base layer that everything else works on top of. [Read more about HTTP](/what-is-http)
-
-## Anatomy of a request
-
-Three different bits of a request:
-
-1. URL
-2. Method
-3. Body
-4. Headers
-
-### 1. URL 
-
-The request needs to know where it's going. 
-
-The URL is like the address on the outside of a letter. That's why it's sometimes called a web address.
-
-*Example* `https://api.spotify.com/v1/artists/abcde`
-
-### 2. HTTP method
-
-This is a bit like the tone of your letter. You could write a sad, angry or happy letter.
-
-The method let's you know what the side effect of your request will be.
-
-**Side effect? Huh?**
-
-An API request could be just getting some data from another web site.
-
-But there are also requests that create new data, change existing data and, most scary of all, delete data.
-
-If you made a request to get a list of films Al Pacino has been in, I'm sure he'd be cool with that.
-
-If you made a request which deleted his whole filmography... that's a very different story. I imagine you'd get SHOUTY AL PACINO.
-
-**What methods are there?**
-
-We use 4 methods. And for some reason they're all in capitals. Maybe that's AL PACINO'S SHOUTY INFLUENCE. Dunno.
-
-|Method|Meaning|
-|:-----|:------|
-|GET|Get some data. Don't change nothing!|
-|POST|Create data. New things! Fun!|
-|PUT|Change data. Maybe you need to update something?|
-|DELETE|Delete data. Nope, it's gone for good. Soz!|
-{: class="pure-table"}
-
-### 3. Body
-
-The content of your letter. 
-
-For a GET request this is blank. A GET request is like sending your friend an empty postage paid envelope to send you a letter back.
-
-A POST request needs to create an object. If we wanted to create a new contact, we'd use the body to send the name, address age etc.
-
-The body has the same format as the rest of the API - usually JSON or XML.
-
-### 4. Headers
-
-Headers are for extra stuff. Like fancy stamps on your letter.
-
-APIs have access to some pretty sensitive stuff. So they often need you to do a kind of ultra secure Fort Knox style sign in.
-
-If you need to give your username and password to an API, you use the headers to pass this in.
-
-
-
-## What's in a response?
-
-Three bits:
-
-1. Status
-2. Body
-3. Headers
-
-## 1. Status
-
-Was this request successful? 
-
-Did your letter make your friend angry, happy, sad? Did your letter even reach your friend?
-
-There are loads of status codes. Here are a few common ones:
-
-|Code|Meaning|
-|:---|:------:
-|200|Success!|
-|301|Redirect - sorry, this has moved.|
-|404|Not found - this doesn't exist any more. Whoops!|
-|500|The app crashed. Oh dear. A geek is about to get fired.|
-{: class="pure-table"}
-
-
-## 2. Body
-
-The juicy bit - what's in the letter your friend wrote back to you?
-
-For successful GET requests, this is the data from the API. Again, it'll be in JSON or XML format.
-
-For successful POST requests that create stuff, it might be empty. For failing create requests, it'll contain an error message.
-
-## 3. Headers
-
-The extra bits again. All sorts of crap like when the page was modified, what software's on the server and what your granny had for dinner tonight.
-
-Usually you can ignore this.
-
+[Read more about requests and responses](/what-is-request-response)
 
 ### What's an endpoint?
 
@@ -354,28 +130,9 @@ For example, [here are the endpoints](https://developer.spotify.com/web-api/endp
 
 ![Endpoints of Spotify API](images/apis/spotify-endpoints.png)
 
-**Question** Where's the start of the URL?
-
-At the [top of the page]() it says "Web API Base URL: https://api.spotify.com"
-
-In API documentation, we exclude the start bit so we don't have to keep repeating it.
-
-If the endpoint is `/v1/albums` the full endpoint URL will be `https://api.spotify.com/v1/albums`
-
-**Question** What do the things in curly braces mean?
-
-It means "put a unique identifier here".
-
-The first endpoint is `/v1/albums/{id}` so we should replace the `{id}` for the album ID we want.
-
+[Read more about endpoints](/what-is-an-endpoint)
 
 ## Putting it all together - an example
-
-
-
-
-
-
 
 
 
