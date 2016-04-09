@@ -31,16 +31,14 @@ If a URL is a postal address, the scheme is your mode of transport.
 
 |Scheme| Meaning|Browser behaviour|
 |:-----|:-------|:-----|
-|http|Web page|Make an HTTP request to show the page|
-|https|Secure web page|Make an HTTP request to show the page|
-|ftp|File transfer|Try to login to the FTP server to download the file|
+|http|Web page|Make a request to show the page|
+|https|Secure web page|Make a request to show the page|
+|ftp|File transfer|Login to the FTP server to download the file|
 |mailto|Email|Open up your email client|
 |file|Local file|Load the file from your local machine|
+{: class="pure-table"}
 
-The browser will do something different depending on the scheme.
-
-
-2. Host or domain
+### 2. Host or domain
 
 Which domain the request is for.
 
@@ -48,13 +46,13 @@ If a URL is a postal address, the domain is the town. They split the internet up
 
 Usually a single web server handles a single domain.
 
-3. Path
+### 3. Path
 
 If a URL is a postal address, the path is the street and house number.
 
 It's the specific area of the domain that we want to go to.
 
-4. Query
+### 4. Query
 
 If a URL is a postal address, the query is you ringing on the doorbell and asking a question.
 
