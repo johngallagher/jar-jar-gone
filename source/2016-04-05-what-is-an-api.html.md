@@ -8,7 +8,7 @@ An API allows two computer programs to communicate over the internet.
 
 Fed up of copy and pasting between different systems? APIs can help.
 
-Want to pull out the data from one website and do some cool stuff with it? APIs are the bomb.
+Want to pull out the data from one website and do some cool stuff with it? APIs are great.
 
 READMORE
 
