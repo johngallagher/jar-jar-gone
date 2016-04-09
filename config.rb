@@ -31,7 +31,7 @@ end
 
 helpers do
   def jargon_articles
-    page_articles.select { |article| article.tags.include? "jargon" }.sort_by { |article| article.data.term }
+    page_articles.select { |article| article.tags.include? "jargon" }.sort_by { |article| article.data.term.downcase }
   end
 
   def image_tag path, params = {}
