@@ -3,36 +3,42 @@ pageable: false
 ---
 
 <% jargon_articles.each do |article| %>
-    <article>
-      <h2><%= link_to article.title, article %></h2>
-      <%= article.summary %>
-      <%= link_to "Read more...", article %>
-    </article>
+  <article>
+    <h2><%= link_to article.title, article %></h2>
+    <%= article.summary %>
+    <%= link_to "Read more...", article %>
+  </article>
 <% end %>
 
-    <article>
-<h2>I want more!</h2>
+<article>
+  <h2>I want more!</h2>
 
-<p> What's missing? What would you love to know that's not here?</p>
-<a href="http://ctt.ec/fcwfx" class="pure-button pure-button-primary">Request a topic</a>
-    </article>
+  <p> What's missing? What would you love to know that's not here?</p>
+  <a href="http://ctt.ec/fcwfx" class="pure-button pure-button-primary">Request a topic</a>
+</article>
 
-    <article>
-<h2>Want to learn technical marketing?</h2>
-<p>I'm making a course teaching technical marketing.</p>
-<p>Sign up if you want to know more!</p>
-<form action="http://synapticmishap.createsend.com/t/r/s/hylhjyl/" method="post" id="subForm" class="pure-form pure-form-aligned">
+<article>
+  <h2>Want to learn technical marketing?</h2>
+  <p>I'm making a course teaching technical marketing.</p>
+  <p>Sign up if you want to know more!</p>
+  <form action="http://synapticmishap.createsend.com/t/r/s/hylhjyl/" method="post" id="subForm" class="pure-form pure-form-aligned">
     <p>
-        <label for="fieldName">Name</label><br />
-        <input id="fieldName" name="cm-name" placeholder="Name" size="60" type="text"/>
+    <label for="fieldName">Name</label><br />
+    <input id="fieldName" name="cm-name" placeholder="Name" size="60" type="text"/>
     </p>
     <p>
-        <label for="fieldEmail">Email</label><br />
-        <input id="fieldEmail" placeholder="Email address (required)" size="60" name="cm-hylhjyl-hylhjyl" type="email" required />
+    <label for="fieldEmail">Email</label><br />
+    <input id="fieldEmail" placeholder="Email address (required)" size="60" name="cm-hylhjyl-hylhjyl" type="email" required />
     </p>
     <p>
-        <button type="submit" class="pure-button pure-button-primary">I want to learn technical marketing</button>
+    <button type="submit" class="pure-button pure-button-primary">I want to learn technical marketing</button>
     </p>
     <small>No spam. Promise.</small>
-</form>
-    </article>
+  </form>
+</article>
+
+<div class="footer">
+  <div class="pure-g">
+    <div class="pure-u-1">Made by <a href="http://twitter.com/synapticmishap">@synapticmishap</a> and <a href="http://twitter.com/beyondcontent">@beyondcontent</a></div>
+  </div>
+</div>
