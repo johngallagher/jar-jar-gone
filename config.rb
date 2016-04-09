@@ -56,3 +56,4 @@ activate :google_analytics do |ga|
 end
 
 activate :directory_indexes
+activate :syntax

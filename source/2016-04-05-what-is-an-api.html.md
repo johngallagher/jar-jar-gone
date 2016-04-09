@@ -17,11 +17,14 @@ READMORE
 1. Login a user via Twitter, Facebook or Google
 2. Share data between two websites
 
+![Spotify Facebook sign in](/images/apis/spotify-signup.png)
+
 ### 1. Login a user via Twitter, Facebook or Google 
 
 You want to sign up for a Spotify account but don't want to remember another stupid password.
 
 Spotify allows sign in using your Facebook account.
+
 
 When you press that "Sign in using Facebook" button:
 
@@ -61,7 +64,7 @@ It's a conversation between two computers. One computer makes a request to the A
 * Request: "Cool. Can I see more details for that third track please?"
 * Response: "Certainly. Here you go. It's written by David Bowie and it's got album art."
 
-**Aside** Want a practical? Try my tutorial to [get the tracks of an album using the Spotify API!](/using-the-spotify-api-to-get-an-albums-tracks)
+**Aside** Try my tutorial to [get the tracks of an album using the Spotify API!](/using-the-spotify-api-to-get-an-albums-tracks)
 
 ## How does an API send and receive information?
 
@@ -78,6 +81,85 @@ Of these, REST using the JSON format is the most popular.
 Because JSON wasn't around when SOAP was invented.
 
 ## What is REST?
+
+It's a blueprint for building a web app or an API.
+
+It's a set of rules that determine how a web app or API gives back it's data.
+
+Most web apps and APIs nowadays are what we call "RESTful" - they play by the rules set down by REST.
+
+### Why bother with rules?
+
+Imagine trying to have a conversation with someone who's rude and socially awkward. Imagine playing a game of football with no rules. 
+
+It'd be pretty chaotic, frustrating and unproductive.
+
+
+### How does REST work?
+
+REST works off **resources** and **actions**.
+
+In everyday English, a resource is a noun, and an action is the verb.
+
+"I smashed the chair" - the resource is the chair, the action is smash.
+
+**Example - Facebook**
+
+Facebook is a RESTful app.
+
+
+What resources does Facebook have? 
+
+1. Friends
+2. Photos
+3. Albums
+4. Comments
+5. Status updates
+6. Events
+
+What actions does Facebook have?
+
+In a RESTful app, there are always seven actions to choose from:
+
+1. List
+2. Show
+3. New
+4. Create
+5. Edit
+6. Update
+7. Destroy
+
+Everything you do in a RESTful app is a combination of a resource and an action.
+
+Let's walk through using Facebook. Along the way we'll identify the resources and action.
+
+### 1. Login
+
+What do you see when you login to Facebook?  Your friends' status updates.
+
+* **Resource** Status update
+* **Action** List
+
+### 2. Post a new status update
+
+Imagine you've just eaten a delicious bowl of ice cream. Yasss!
+
+It's **vital** that your friends are aware just how good that tasted.
+
+Click in the "What's on your mind?" box.
+Type "I just had a bowl of mint choc chip and it was fucking UNREAL! #myfascinatinglife #refinedsugarisdabomb"
+Click "Post".
+
+* **Resource** Status update
+* **Action** Create
+
+### 3. Go into someone's status update
+
+updatege
+
+
+
+
 
 ## What is SOAP?
 
@@ -105,25 +187,25 @@ What would the response from the API look like?
 
 **George Clooney in JSON**
 
-```json
+~~~ json
 {
   "name": "George Timothy Clooney",
   "birthday": "May 6, 1961",
   "age": 54,
   "birthPlace": "Lexington, Kentucky, U.S."
 }
-```
+~~~
 
 **George Clooney in XML**
 
-```xml
+~~~ xml
 <celebrity>
   <name>George Timothy Clooney</name>
   <birthday>May 6, 1961</birthday>
   <age>54</age>
   <birthPlace>Lexington, Kentucky, U.S.</birthPlace>
 </celebrity>
-```
+~~~
 
 JSON versus XML is a bit like a film on the TV versus in a cinema. It's exactly the same film, but it looks different.
 
@@ -147,15 +229,15 @@ The request and response is often encoded using JSON or XML.
 
 ## What are requests and responses?
 
+They're packets of information flying around.  You can imagine them as letters between friends.
+
+Making a request to an API is like writing a letter to your pen pal.
+
+![Letter to pen pal](/images/apis/letter-from-pen-pal-small.jpg)
+
+Getting the response back is like getting a reply back through your letterbox. Aw!
+
 The whole internet works off requests and responses and APIs are no different.
-
-What are they? They're packets of information flying around. 
-
-You can imagine them as letters between friends.
-
-Making a request to an API is a bit like writing a letter to your pen pal.
-
-Getting the response back is a bit like getting a reply letter back through your letterbox. Aw!
 
 **Aside** They're sometimes called HTTP requests or responses. HTTP is the base layer that everything else works on top of. [Read more about HTTP](/what-is-http)
 
