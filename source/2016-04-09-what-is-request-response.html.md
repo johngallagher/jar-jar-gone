@@ -34,8 +34,6 @@ The request needs to know where it's going.
 
 The URL is like the address on the outside of a letter. That's why it's sometimes called a web address.
 
-*Example* `https://api.spotify.com/v1/artists/abcde`
-
 ### 2. HTTP method
 
 This is a bit like the tone of your letter. You could write a sad, angry or happy letter.
