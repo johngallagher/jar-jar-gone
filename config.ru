@@ -1,5 +1,7 @@
 require 'rack'
 require 'rack/cache'
+require 'rack/etag'
+require 'rack/contrib/static_cache'
 require 'rack/contrib/try_static'
 require 'rack/contrib/not_found'
 require 'dalli'
@@ -20,12 +22,14 @@ def client
   end
 end
 
+use Rack::StaticCache, 
+  urls: ["/images", "/stylesheets"],
+  root: 'build'
+
 use Rack::Cache,
   verbose: true,
   metastore: client,
-  entitystore: client,
-  use_native_ttl: true,
-  default_ttl: 3600
+  entitystore: client
 
 use Rack::Deflater
 use Rack::TryStatic,
