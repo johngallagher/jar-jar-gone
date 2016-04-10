@@ -11,7 +11,7 @@ If a URL is a postal address, the scheme is your mode of transport.
 
 READMORE
 
-|Scheme| Meaning|Browser behaviour|
+||Type|Behaviour|
 |:-----|:-------|:-----|
 |http|Web page|Make a request to show the page|
 |https|Secure web page|Make a request to show the page|
