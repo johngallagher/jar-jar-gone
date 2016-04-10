@@ -17,7 +17,7 @@ The whole internet works off requests and responses. Web sites, images, APIs, fo
 
 They're sometimes called HTTP requests or responses. 
 
-HTTP is the base layer that everything else works on top of. [Read more about HTTP](/what-is-http)
+HTTP is the base layer that everything else works on top of. 
 
 ## What's in a request?
 
