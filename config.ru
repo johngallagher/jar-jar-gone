@@ -7,8 +7,8 @@ require 'dalli'
 def client
   if ENV['RACK_ENV'] == 'production'
     Dalli::Client.new(ENV['MEMCACHEDCLOUD_SERVERS'],
-                      :username => ENV["MEMCACHIER_USERNAME"],
-                      :password => ENV["MEMCACHIER_PASSWORD"],
+                      :username => ENV["MEMCACHEDCLOUD_USERNAME"],
+                      :password => ENV["MEMCACHEDCLOUD_PASSWORD"],
                       :failover => true,
                       :socket_timeout => 1.5,
                       :socket_failure_delay => 0.2,
