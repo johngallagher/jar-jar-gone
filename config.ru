@@ -2,6 +2,7 @@ require 'rack'
 require 'rack/cache'
 require 'rack/contrib/try_static'
 require 'rack/contrib/not_found'
+require 'dalli'
 
 memcached_server = ENV.fetch('MEMCACHEDCLOUD_SERVERS', 'localhost:11211')
 
