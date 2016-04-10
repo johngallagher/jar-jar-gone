@@ -17,15 +17,33 @@ READMORE
 
 In API documentation, it's usually not shown, just so it all looks neater.
 
-In Spotify's case, it's `https://api.spotify.com`
+For the Spotify API, the base URL is:
 
-If the endpoint is `/v1/albums` the full endpoint URL will be `https://api.spotify.com/v1/albums`
+~~~
+https://api.spotify.com
+~~~
+
+If the endpoint is: 
+
+~~~
+/v1/albums
+~~~
+
+then the full endpoint URL will be:
+
+~~~
+https://api.spotify.com/v1/albums
+~~~
 
 ## What do the things in curly braces mean?
 
 It means "put a unique identifier here".
 
-The first endpoint is `/v1/albums/{id}`.
+The first endpoint is 
+
+~~~
+/v1/albums/{id}
+~~~
 
 So we'd put the albums's ID instead of the curly braces.
 
@@ -35,14 +53,16 @@ Let's have a quick example.
 
 The album ID of Blackstar is `2w1YJXWMIco6EBf0CovvVN`.
 
-So you'd make a request to 
+So you'd make a request to:
 
-`https://api.spotify.com/v1/albums/2w1YJXWMIco6EBf0CovvVN`
+~~~
+https://api.spotify.com/v1/albums/2w1YJXWMIco6EBf0CovvVN
+~~~
 
-[Click here to try it out](https://api.spotify.com/v1/albums/2w1YJXWMIco6EBf0CovvVN)
+[Click here to try it out.](https://api.spotify.com/v1/albums/2w1YJXWMIco6EBf0CovvVN)
 
-Or you can copy and paste that into your browser.
+Or just copy and paste that URL into your address bar.
 
-You'll see the API response.
+You've just made a call to a JSON API endpoint. Woohoo!
 
 
