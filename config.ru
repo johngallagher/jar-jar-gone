@@ -23,7 +23,9 @@ end
 use Rack::Cache,
   verbose: true,
   metastore: client,
-  entitystore: client
+  entitystore: client,
+  use_native_ttl: true,
+  default_ttl: 3600
 
 use Rack::Deflater
 use Rack::TryStatic,
