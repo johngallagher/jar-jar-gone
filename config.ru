@@ -22,6 +22,7 @@ def client
   end
 end
 
+use Rack::Deflater
 use Rack::StaticCache, 
   urls: ["/images", "/stylesheets"],
   root: 'build'
@@ -31,7 +32,6 @@ use Rack::Cache,
   metastore: client,
   entitystore: client
 
-use Rack::Deflater
 use Rack::TryStatic,
   root: 'build',
   urls: %w[/],
