@@ -19,6 +19,7 @@ gem "builder", "~> 3.0"
 
 gem 'rack-contrib'
 gem 'rack-cache'
+gem 'connection_pool'
 
 gem 'puma'
 
