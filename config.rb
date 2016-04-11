@@ -37,7 +37,25 @@ helpers do
   def image_tag path, params = {}
     super path, params.merge(class: "pure-img #{params.fetch(:class, "")}")
   end
+
+  def meta_description_for article
+    raw_summary = Nokogiri::HTML::fragment(article.summary).text.strip.gsub(/\s+/, ' ')
+    truncate_to_sentence(raw_summary, length: 150)
+  end
+
+  def truncate_to_sentence(text, options={})
+    target_length = options.fetch(:length, 100)
+    text.split('.').inject('') do |truncated, sentence|
+      if (truncated + sentence).length < target_length
+        truncated + sentence + "."
+      else
+        truncated
+      end
+    end
+  end
 end
+
+
 
 configure :build do
   activate :minify_css

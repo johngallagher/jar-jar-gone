@@ -11,6 +11,7 @@
     <%= stylesheet_link_tag 'all' %>
 
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="<%= is_blog_article? ? meta_description_for(current_page) : "Programming jargon explained in plain English for the modern digital marketer." %>">
 
     <% if environment != :development %>
       <script>

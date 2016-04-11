@@ -190,6 +190,7 @@ DEPENDENCIES
   middleman-imageoptim!
   middleman-livereload (~> 3.4.3)
   middleman-syntax
+  nokogiri
   puma
   rack-cache
   rack-contrib

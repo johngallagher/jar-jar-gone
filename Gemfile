@@ -23,4 +23,4 @@ gem 'connection_pool'
 
 gem 'puma'
 
-
+gem 'nokogiri'
