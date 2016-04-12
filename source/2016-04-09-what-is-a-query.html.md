@@ -5,15 +5,18 @@ tags: jargon
 term: query
 ---
 
-![Query in url structure](/images/apis/query-url-structure.png)
+![The query is at the very end of the URL after the question mark.](/images/apis/query-url-structure.png)
 
 If a URL is a postal address, the query is you ringing on the doorbell and asking a question.
 
 READMORE
 
-Many times, a query string isn't needed. You just visit a URL and it'll show you a page.
 
-But sometimes you need to ask the web page a question and it gives you back an answer.
+Sometimes you need to ask the web page a question and it gives you back an answer.
 
-Searching Google is a great example: the query string contains the question you're asking.
+Searching Google is a great example: the query contains the question you're asking.
+
+In other cases the query string contains data the page needs. Sometimes data from forms is sent in the query string.
+
+It's optional. If a page has no search or doesn't depend on data, a query string isn't needed. 
 
