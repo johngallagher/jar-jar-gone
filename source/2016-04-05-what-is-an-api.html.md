@@ -93,19 +93,37 @@ REST tells you what should be in your request and response for each resource in 
 
 Like REST, it's a structured set of rules for how an API works.
 
-It's pretty much dead nowadays - noone except the criminally insane would choose this for a new API.
+It's pretty much dead nowadays - no-one except the criminally insane would choose this for a new API.
+
+It was popular for a while, so there's quite a lot of existing APIs written in it.
 
 ## What is XML? What is JSON?
 
-A way of formatting data. The Internet works by sending text files around. But what goes in these text files?
+A way of formatting data for use with APIs.
 
-And how do we convert information about an event, person, place or anything else into something a computer can understand?
+There are two common ways of doing this: JSON or XML.
 
-There are two common ways of doing this for APIs: JSON and XML.
+**George Clooney in JSON**
 
-XML looks like this:
+~~~ json
+{
+  "name": "George Timothy Clooney",
+  "birthday": "May 6, 1961",
+  "age": 54,
+  "birthPlace": "Lexington, Kentucky, U.S."
+}
+~~~
 
-JSON looks like this:
+**George Clooney in XML**
+
+~~~ xml
+<celebrity>
+  <name>George Timothy Clooney</name>
+  <birthday>May 6, 1961</birthday>
+  <age>54</age>
+  <birthPlace>Lexington, Kentucky, U.S.</birthPlace>
+</celebrity>
+~~~
 
 [Read more about XML and JSON](/what-is-xml-or-json)
 
@@ -118,6 +136,8 @@ They're packets of information flying around.  You can imagine them as letters b
 
 Making a request is like writing a letter to your pen pal.
 
+Receiving a response is like getting a letter back through your door.
+
 [Read more about requests and responses](/what-is-request-response)
 
 ### What's an endpoint?
@@ -129,8 +149,6 @@ For example, [here are the endpoints](https://developer.spotify.com/web-api/endp
 ![Endpoints of Spotify API](images/apis/spotify-endpoints.png)
 
 [Read more about endpoints](/what-is-an-endpoint)
-
-## Putting it all together - an example
 
 
 
