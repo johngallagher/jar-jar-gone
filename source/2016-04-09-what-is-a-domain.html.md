@@ -5,7 +5,7 @@ tags: jargon
 term: domain
 ---
 
-![Domain in url structure](/images/apis/domain-url-structure.png)
+![A domain is the part of the URL that's often advertised.](/images/apis/domain-url-structure.png)
 
 If a URL is a postal address, the domain is the town. They split the internet up into general areas.
 

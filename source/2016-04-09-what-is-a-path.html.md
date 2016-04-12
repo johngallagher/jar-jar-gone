@@ -5,7 +5,7 @@ tags: jargon
 term: path
 ---
 
-![Path in url structure](/images/apis/path-url-structure.png)
+![The path comes after the domain and often contains many slashes.](/images/apis/path-url-structure.png)
 
 If a URL is a postal address, the path is the street and house number.
 

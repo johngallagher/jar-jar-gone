@@ -5,7 +5,7 @@ tags: jargon
 term: scheme
 ---
 
-![Scheme in url structure](/images/apis/scheme-url-structure.png)
+![The scheme comes first in a URL.](/images/apis/scheme-url-structure.png)
 
 If a URL is a postal address, the scheme is your mode of transport.
 
