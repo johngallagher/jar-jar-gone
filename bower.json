@@ -1,0 +1,20 @@
+{
+  "name": "jar-jar-gone",
+  "version": "0.0.0",
+  "homepage": "https://github.com/johngallagher/jar-jar-gone",
+  "authors": [
+    "John Gallagher <john@synapticmishap.co.uk>"
+  ],
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "list.js": "~1.2.0"
+  }
+}

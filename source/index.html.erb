@@ -2,13 +2,17 @@
 pageable: false
 ---
 
+<div class="list">
 <% jargon_articles.each do |article| %>
   <article>
-    <h2><%= link_to article.title, article %></h2>
+    <h2 class="name"><%= link_to article.title, article %></h2>
+    <span class="summary">
     <%= article.summary %>
+    </span>
     <%= link_to "Read more...", article %>
   </article>
 <% end %>
+</div>
 
 <article>
   <h2>I want more!</h2>
