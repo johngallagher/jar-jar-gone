@@ -24,7 +24,7 @@ end
 
 use Rack::Deflater
 use Rack::StaticCache, 
-  urls: ["/images", "/stylesheets"],
+  urls: ["/images", "/stylesheets", "/javascripts"],
   root: 'build'
 
 use Rack::Cache,
