@@ -25,9 +25,6 @@ activate :blog do |blog|
 end
 
 page "/feed.xml", layout: false
-configure :development do
-  activate :livereload
-end
 
 helpers do
   def jargon_articles
@@ -56,14 +53,18 @@ helpers do
 end
 
 
+activate :asset_host
+
+configure :development do
+  activate :livereload
+end
 
 configure :build do
   activate :minify_css
-end
 
-activate :imageoptim do |options|
-  options.pngout = false
-  options.svgo = false
+  set :asset_host do |asset|
+    '//s3-eu-west-1.amazonaws.com/jar-jar-gone'
+  end
 end
 
 activate :gzip
