@@ -14,9 +14,12 @@ Well. Programming jargon is also annoying.
 * Jargon allows dishonest techie folk to bullshit
 * Jargon confuses, isolates and pushes people apart
 
-I couldn't find a single site explaining techie terms in simple, plain English.
+We couldn't find a single site explaining techie terms in simple, plain English.
 
-So I made this.
+So we made this.
 
 I'd love to hear [what you think on Twitter](http://twitter.com/synapticmishap).
 
+Made by:
+* [@synapticmishap](http://twitter.com/synapticmishap)
+* [@beyondcontent](http://twitter.com/beyondcontent)
