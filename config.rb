@@ -52,19 +52,17 @@ helpers do
   end
 end
 
-
-activate :asset_host
-
 configure :development do
   activate :livereload
 end
 
 configure :build do
   activate :minify_css
+end
 
-  set :asset_host do |asset|
-    '//s3-eu-west-1.amazonaws.com/jar-jar-gone'
-  end
+activate :imageoptim do |options|
+  options.pngout = false
+  options.svgo = false
 end
 
 activate :gzip
