@@ -1,1 +1,1 @@
-//= require list.js/dist/list.js
+//= require list
