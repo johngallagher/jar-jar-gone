@@ -3,7 +3,7 @@ title: How to use the Spotify API to get the tracks of an album
 tags: tutorial
 ---
 
-[What is an API?](what-is-an-api.html) gave the theory of an API.
+[What is an API?](/what-is-an-api) gave the theory of an API.
 
 Now it's time to get your hands dirty.
 
