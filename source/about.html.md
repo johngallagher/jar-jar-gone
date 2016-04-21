@@ -21,5 +21,6 @@ So we made this.
 I'd love to hear [what you think on Twitter](http://twitter.com/synapticmishap).
 
 Made by:
+
 * [@synapticmishap](http://twitter.com/synapticmishap)
 * [@beyondcontent](http://twitter.com/beyondcontent)
