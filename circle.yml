@@ -1,3 +1,6 @@
+test:
+  override:
+    - ruby test/*.rb
 deployment:
   production:
     branch: master
