@@ -50,7 +50,7 @@ GEM
     eventmachine (1.2.0.1)
     execjs (2.6.0)
     exifr (1.2.4)
-    ffi (1.9.10)
+    ffi (1.13.1)
     fspath (2.1.1)
     git-version-bump (0.15.1)
     haml (4.0.7)
