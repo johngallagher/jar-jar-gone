@@ -13,7 +13,7 @@ gem 'kgio'
 
 gem 'image_optim'
 
-gem 'redcarpet', '~> 3.3', '>= 3.3.3'
+gem 'redcarpet', '~> 3.5'
 
 gem "builder", "~> 3.0"
 
